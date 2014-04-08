@@ -1,0 +1,32 @@
+To do week of 3/25 - 4/01:
+
+>finish up chapter 9, 10.
+
+>redo front page, list page:
+
+	> game name
+	> console
+	> email of lister
+	> date added
+	> location
+
+>remake games db with proper data.
+	>game name
+	>console
+	>location
+	>
+
+
+long term goals:
+
+> in site messaging/ email sending
+
+> gamesDB integration for new games listing. 
+
+> 
+
+
+
+> recruitment locations for people: 
+	> esports club
+	> Gaming club

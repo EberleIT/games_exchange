@@ -1,0 +1,13 @@
+<%= form_for(@game) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :name, placeholder: "Game Name" %>
+	</div>
+	<div class="field">
+	 <%= f.text_field :console, placeholder: "Game Console" %>
+	 </div>
+	 <div class="field">
+	  <%= f.text_field :location, placeholder: "General location" %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+<% end %>

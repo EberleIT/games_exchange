@@ -1,0 +1,28 @@
+<li id="<%= feed_item.id %>">
+  <span class="user">
+    <h3><%= link_to feed_item.user.username, feed_item.user %></h3>
+ 
+
+
+ <table style="width:80%">
+             
+  <tr>
+  <td>Game Name</td>
+  <td>Console</td> 
+  <td>Location</td>
+  <td>User ID</td>
+  <td>Date posted</td>
+</tr>
+	   
+	   
+<tr>
+  <td><%= feed_item.name %></td>
+  <td><%= feed_item.console %></td> 
+  <td><%= feed_item.location %></td>
+  <td><%= feed_item.user_id %></td>
+ <td>Posted <%= time_ago_in_words(feed_item.created_at) %> </td>
+</tr>
+
+</table>
+
+</li>

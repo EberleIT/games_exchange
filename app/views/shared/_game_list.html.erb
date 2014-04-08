@@ -1,0 +1,28 @@
+
+<div class="span8">    
+	<h2> All Listed games</h2>
+     <table style="width:80%">
+	 
+	 
+       <% @games.each do |game| %>
+       
+  <tr>
+  <td>Game Name</td>
+  <td>Console</td> 
+  <td>Location</td>
+  <td>User ID</td>
+  <td>Date posted</td>
+</tr>
+	   
+	   
+<tr>
+  <td><%= game.name %></td>
+  <td><%= game.console %></td> 
+  <td><%= game.location %></td>
+  <td><%= game.user_id %></td>
+ <td>Posted <%= time_ago_in_words(game.created_at) %> </td>
+</tr>
+ <% end %>
+</table>
+</div>
+

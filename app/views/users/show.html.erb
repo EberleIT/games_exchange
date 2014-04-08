@@ -1,0 +1,57 @@
+ 
+ 
+ <div class="row">
+    <aside class="span4">
+	<table style="width:80%">
+<tr>
+      <section>
+       <% provide(:title, @user.username) %>
+<h1><%= @user.username %></h1>
+
+<td>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+ 
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @user.location %>
+</p>
+</td>
+      </section>
+      <section>
+	  <td>
+        <%= render 'shared/game_form' %>
+		</td>
+      </section>
+	  </tr>
+	  </table>
+    </aside>
+	
+  </div>
+
+
+
+
+
+<div class="span8">
+
+    <% if @user.games.any? %>
+      <h3>Games (<%= @user.games.count %>)</h3>
+      <ol class="games">
+        <%= render @games %>
+      </ol>
+      <%= will_paginate @games %>
+    <% end %>
+  </div>
+  
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

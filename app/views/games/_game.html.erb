@@ -1,0 +1,8 @@
+<li>
+  <span class="name"><%= game.name %></span>
+  <span class="console"><%= game.console %></span>
+  <span class="location"><%= game.location %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(game.created_at) %> ago.
+  </span>
+</li>
